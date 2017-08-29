@@ -30,7 +30,7 @@ if (env === 'production') {
 app.use(express.static('public'));
 app.set('port', port);
 http.createServer(app)
-  .listen(app.get('port'), () => {
+  .listen(process.env.port || 3000, () => {
     console.log(`Local server listening to port ${app.get('port')}`);
   });
 
