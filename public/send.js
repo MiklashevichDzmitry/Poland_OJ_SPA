@@ -1,7 +1,7 @@
 const inputFile = document.getElementById('file');
 const submitButton = document.getElementsByClassName('submitButton')[0];
 const outputText = document.getElementById('fakeText');
-const serverURN = 'https://ojworkexpert.herokuapp.com'; // You need to change this with real site name
+const serverURN = ' https://ojworkexpert.herokuapp.com/'; // You need to change this with real site name
 
 let files = null;
 let XHR = new XMLHttpRequest();
