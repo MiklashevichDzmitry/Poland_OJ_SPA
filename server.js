@@ -20,11 +20,11 @@ const env = process.env.NODE_ENV || 'development';
 const httpPort = 80;
 const httpsPort = 443;
 const devPort = 3000;
-let port = httpsPort;
+let port = devPort;
 let resumeCounter = 0;
 
 if (env === 'production') {
-  port = httpsPort; // or httpsPort
+  port = devPort; // or httpsPort
 }
 
 app.use(express.static('public'));
