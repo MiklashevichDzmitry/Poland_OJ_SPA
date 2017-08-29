@@ -1,0 +1,139 @@
+.questionLabel {
+  position: absolute;
+  top: 30px;
+  left: 31%;
+  text-align: center;
+
+  font-family: 'Exo2-Light';
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: -1px;
+
+  color: blue;
+}
+
+.companyName {
+  position: fixed;
+  bottom: 20px;
+  left: 80%;
+
+  font-family: 'Exo2-Light';
+  font-size: 34px;
+  font-weight: bold;
+  letter-spacing: -1px;
+
+  color: #2F2F2F;
+  opacity: 0.8;
+}
+
+.formContainer {
+  position: absolute;
+  top: 200px;
+  left: 40%;
+
+  height: 260px;
+  width: 340px;
+
+  background-color: #85AFFF;
+  border: #85AFFF;
+  border-radius: 18px;
+  opacity: 0.8;
+}
+
+.fileUploadContainer {
+  position: absolute;
+  top: 14%;
+  left: 19%;
+}
+
+.fileUpload {
+  position: absolute;
+	width: 0.1px;
+  height: 0.1px;
+  
+	opacity: 0;
+	overflow: hidden;
+	z-index: -1;
+}
+
+#fakeText {
+  position: absolute;
+  top: 26%;
+  left: 10%;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  color: black;
+}
+
+.fileUpload + .fakeFileUpload {
+  display: inline-block;
+  width: 220px;
+  height: 50px;
+  
+  background-color: whitesmoke;
+  border-radius: 15px;
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+
+  cursor: pointer;
+}
+
+.fileUpload + .fakeFileUpload:hover {
+  background-color: #FFEF51;
+}
+
+.linkContainer {
+  position: absolute;
+  top: 36%;
+  left: 42%;
+}
+
+.link {
+  font-family: 'Exo2-Light';
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -1px;
+
+  color: blue;
+}
+
+.link:hover {
+  padding: 2px 2px 2px 2px;
+  border-radius: 4px;
+  background-color: yellow;
+  text-decoration: none;
+}
+
+.submitButton {
+position: absolute;
+bottom: 16%;
+left: 19%;
+width: 220px;
+height: 50px;
+display: inline-block;
+
+background-color: yellow;
+border: black;
+border-radius: 15px;
+color: black;
+
+text-align: center;
+font-family: 'Exo2-Light';
+font-size: 22px;
+font-weight: bold;
+opacity: 0.5;
+}
+
+html {
+  background: url(krakov.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+* {
+  opacity: 1.0;
+}

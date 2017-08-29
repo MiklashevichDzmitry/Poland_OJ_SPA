@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <title>O&J Work Expert</title>
+  <link href="css-reset.css" rel="stylesheet">
+  <link href="css.css" rel="stylesheet">
+  <link rel="icon" href="poland.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <div>
+    <h1 class="companyName">O&J Work Expert</h1>
+  </div>
+  <div>
+    <h1 class="questionLabel">Интересует работа в Польше? <br /> - Мы поможем!</h1>
+  </div>
+  <form enctype="multipart/form-data" method="post" name="uploadForm">
+    <div class="formContainer">
+      <div class="fileUploadContainer">
+        <input class="fileUpload" type="file" id="file" name="file" accept=".doc, .docx, .pdf">
+        <label class="fakeFileUpload" for="file"> <p id="fakeText"> Прикрепить резюме </p> </label>
+      </div>
+      <div class="linkContainer">
+        <a class="link" href="obrazec_rezume.doc" download>Скачать образец</a>
+      </div>
+      <div>
+        <button form="uploadForm" class="submitButton" type="submit" disabled>Отправить</button>
+      </div>
+    </div>
+  </form>
+  <script src="send.js"></script>
+</body>
+
+</html>
