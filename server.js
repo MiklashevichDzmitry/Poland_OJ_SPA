@@ -20,7 +20,7 @@ const env = process.env.NODE_ENV || 'development';
 const httpPort = 80;
 const httpsPort = 443;
 const devPort = 3000;
-let port = httpsPort ;
+var port = process.env.PORT || 8000 ;
 let resumeCounter = 0;
 
 if (env === 'production') {
@@ -30,7 +30,7 @@ if (env === 'production') {
 app.use(express.static('public'));
 app.set('port', port);
 http.createServer(app)
-  .listen(process.env.port || 3000, () => {
+  .listen(port || 8000, () => {
     console.log(`Local server listening to port ${app.get('port')}`);
   });
 
