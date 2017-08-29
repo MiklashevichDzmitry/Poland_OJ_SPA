@@ -24,7 +24,7 @@ var port = process.env.PORT || 8000 ;
 let resumeCounter = 0;
 
 if (env === 'production') {
-  port = httpsPort; // or httpsPort
+  port = process.env.PORT || 8000; // or httpsPort
 }
 
 app.use(express.static('public'));
