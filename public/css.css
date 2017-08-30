@@ -141,6 +141,11 @@ font-weight: bold;
 opacity: 0.5;
 }
 
+@media all and (max-width : 600px) {
+.companyName {width: 600px},
+.companyName1 {width: 600px},
+}
+
 html {
   background: url(krakov.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
