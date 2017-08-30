@@ -141,9 +141,9 @@ font-weight: bold;
 opacity: 0.5;
 }
 
-@media all and (max-width : 600px) {
-.companyName {width: 600px},
-.companyName1 {width: 600px},
+@media all and (max-width : 1280px) {
+.companyName {width: 1200px;}
+.companyName1 {width: 1200px;}
 }
 
 html {
